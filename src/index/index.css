@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    color: beige; 
+     background: #080808;
+     
+}
+.home{
+  height: 100vh;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  position: relative;
+}
+
+#curser{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background-color: #eee;
+  position: fixed;
+  z-index: 6;
+}
+
+
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  padding: 0px 50px;
+
+}
+
+.A{
+  color: rgb(177, 18, 18);
+  font-size: 45px;
+}
+
+.l-nav{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    padding: 5px 10px 15px;
+    opacity: 1;
+    justify-content: space-between;
+  }
+
+  .l-nav a{
+  color: inherit; 
+  text-decoration: none; 
+  padding-bottom:  15px;
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-size: 30px;
+  }
+
+  .name{
+    display: flex;
+    gap: 10px;
+  }
+
+  .name p{
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-size: 40px;
+  }
+  .mid-nav{
+    display: flex;
+    gap: 50px
+  }
+  .mid-nav>h2{
+    font-family: "Ubuntu Sans Mono", monospace;
+  }
+.mid-nav a {
+  color: inherit; 
+  text-decoration: none; 
+}
+.description{
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+}
+.nav-skill{
+  display: flex;
+  gap: 10px;
+}
+
+.nav-work{
+  display: flex;
+  gap: 5px;
+}
+
+.nav-edu{
+  display: flex;
+  gap: 5px;
+}
+.nav-resum{
+  display: flex;
+  gap: 5px;
+}
+.nav-contact{
+  display: flex;
+  gap: 5px;
+}
+.description h2{
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-weight: 100;
+  font-size: 20px;
+ color: #c18949;
+}
+.container-holder{
+  height: 92vh;
+  width: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .inner-box{
+    height: 60%;
+    width: 90%;
+    gap: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    /* background: #000; */
+  }
+  .name{
+    display: flex;
+    gap: 20px;
+  }
+  .name>p{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+  #left-box> p {
+    word-wrap: break-word;
+    font-size: 35px;
+    font-family: "Ubuntu Sans Mono", monospace;
+    /* font-family:  ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  }
+
+  #rigth-box{
+    height: 100%;
+    width: 35%;
+    background: #8f1c1c;
+    border-radius: 50%;
+    position: relative;
+    border-color: #eeeeee;
+    border-width: 8px;
+  }
+  #rigth-box>img{ 
+    justify-content: center;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    background-size: cover; 
+    background-color: #eeeeee;
+    width: 100%;
+  } 
+  #overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 50%;
+    z-index: 8;
+  }
+  /* -------------------------------------------------------------------------------------------------- */
+  
+  #skill{
+    height: 100vh;
+    width: 100%;
+    background: #221c1c3f;
+  }
+
+  .skill-heading{
+    font-size: 50px;
+    font-family: "Ubuntu Sans Mono", monospace;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* ---------------------------------------------------------------------------------- */
+  #mywork{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+.work-box{
+  height: 80%;
+  width: 90%;
+  
+  margin-top: 30px;
+}
