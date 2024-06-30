@@ -218,6 +218,8 @@ html , body{
 .work-box{
   height: 80%;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
   
   margin-top: 30px;
 }
