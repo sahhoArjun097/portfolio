@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Timeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #E0E0E0; /* Light grey text */
+            font-family: 'Roboto', sans-serif; /* Techy font */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #333;
+        }
+
+        .timeline-item1{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            
+            background: #1E1E1E; /* Slightly lighter dark grey for card */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            width: 40%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow */
+            position: relative;
+        }
+
+        .timeline-item1::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            background: #E0E0E0;
+            border: 4px solid #121212;
+            border-radius: 50%;
+        }
+
+        .timeline-item1:nth-child(odd)::before {
+            left: calc(100% + 10px);
+        }
+
+        .timeline-item1:nth-child(odd) {
+            align-items: flex-end;
+        }
+
+        .timeline-item1 img {
+            width: 50px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item1 h3 {
+            margin: 0 0 10px;
+            font-weight: 700;
+        }
+
+        .timeline-item1 p {
+            margin: 0 0 10px;
+            font-weight: 300;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #00FFAB; /* Neon green accent */
+            color: #121212;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: 400;
+            transition: background 0.3s ease;
+        }
+
+        .tag:hover {
+            background: #00D4AB; /* Slightly darker neon green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="timeline-item1">
+            <img src="../assets/moradabad-institute-of-technology-moradabad-logo.jpg" alt="">
+            <h3>Bachelor degree of Technology in Computer Science and Engineering</h3>
+            <p>Moradabad Institute of Technology and Management, AKTU<br>MORADABAD, India - 4 years</p>
+            <div class="tags">
+                <span class="tag">C</span>
+                <span class="tag">Algorithm</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Python</span>
+                <span class="tag">Database management</span>
+                <span class="tag">Operating System</span>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <img src="../assets/st-mary-s-convent-school-s6629.jpg" alt="">
+            <h3>Intermediate</h3>
+            <p>ST Mary's conventSchool, CBSE<br>DHAMPUR, India</p>
+            <div class="tags">
+                <span class="tag">Physics</span>
+                <span class="tag">Chemistry</span>
+                <span class="tag">Maths</span>
+                <span class="tag">Computer Science</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
