@@ -199,6 +199,7 @@ html , body{
     background: #221c1c3f;
   }
 
+
   .skill-heading{
     font-size: 45px;
     font-family: "Ubuntu Sans Mono", monospace;
@@ -231,11 +232,144 @@ html , body{
 }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
+.myedu-heading{
+  font-size: 45px;
+  font-family: "Ubuntu Sans Mono", monospace;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
 #myedu{
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #242322;
+  background-color: #000;
+}
+
+.myedu-box{
+  /* height: 90%; */
+  width: 80%;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  /* background-color: #8f1c1c; */
+}
+.myedu-box1,.myedu-box2{
+  height: 40vh;
+  width: 45%;
+
+}
+.myedu-box1{
+  top: 0;
+  left: 0;
+}
+.myedu-box2{
+  right: 0;
+  margin-left: 50%;
+
+}
+.college-box{
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.college-box img {
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  /* margin-bottom: 10px; */
+}
+
+.college-box h3 {
+  margin: 0 0 10px;
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-weight: 700;
+}
+
+.college-box p {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-family: "Ubuntu Sans Mono", monospace;
+}
+
+
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 600;
+  font-size: 18px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+.school-box{
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.school-box img {
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  /* margin-bottom: 10px; */
+}
+.school-box h3 {
+  margin: 0 0 10px;
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-weight: 700;
+}
+
+.school-box p {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-family: "Ubuntu Sans Mono", monospace;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+#contact{
+  height: 90vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+
+.contact-heading{
+  font-size: 45px;
+  font-family: "Ubuntu Sans Mono", monospace;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 15px; */
+}
+
+/* --------------------------------------------------------------------------- */
+
+.bottom-line{
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bottom-line h3{
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-weight: 100;
+  font-size: 15px;
+ 
 }
