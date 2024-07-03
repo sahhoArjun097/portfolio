@@ -94,12 +94,10 @@ html , body{
   display: flex;
   gap: 10px;
 }
-
 .nav-work{
   display: flex;
   gap: 5px;
 }
-
 .nav-edu{
   display: flex;
   gap: 5px;
@@ -129,7 +127,6 @@ html , body{
     justify-content: center;
     align-items: center;
   } 
-
   .inner-box{
     height: 60%;
     width: 90%;
@@ -138,7 +135,6 @@ html , body{
     justify-content: center;
     align-items: center;
   }
-
   #left-box{
     display: flex;
     flex-direction: column;
@@ -153,7 +149,6 @@ html , body{
   .name>p{
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
   }
   #left-box> p {
     word-wrap: break-word;
@@ -161,7 +156,6 @@ html , body{
     font-family: "Ubuntu Sans Mono", monospace;
     /* font-family:  ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   }
-
   #rigth-box{
     height: 100%;
     width: 35%;
@@ -192,22 +186,17 @@ html , body{
     z-index: 8;
   }
   /* -------------------------------------------------------------------------------------------------- */
-  
   #skill{
     height: 100vh;
     width: 100%;
     background: #221c1c3f;
   }
-
-
   .skill-heading{
     font-size: 45px;
     font-family: "Ubuntu Sans Mono", monospace;
     display: flex;
     justify-content: center;
   }
-
-
   /* ---------------------------------------------------------------------------------- */
   #mywork{
     height: 105vh;
@@ -231,7 +220,6 @@ html , body{
   text-decoration: none;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-
 .myedu-heading{
   font-size: 45px;
   font-family: "Ubuntu Sans Mono", monospace;
@@ -239,7 +227,6 @@ html , body{
   justify-content: center;
   margin-top: 15px;
 }
-
 #myedu{
   height: 105vh;
   width: 100%;
@@ -248,7 +235,6 @@ html , body{
   flex-direction: column;
   background-color: #000;
 }
-
 .myedu-box{
   /* height: 90%; */
   width: 80%;
@@ -260,7 +246,6 @@ html , body{
 .myedu-box1,.myedu-box2{
   height: 40vh;
   width: 45%;
-
 }
 .myedu-box1{
   top: 0;
@@ -277,7 +262,6 @@ html , body{
   display: flex;
   flex-direction: column;
 }
-
 .college-box img {
   width: 50px;
   align-items: center;
@@ -286,20 +270,16 @@ html , body{
   height: auto;
   /* margin-bottom: 10px; */
 }
-
 .college-box h3 {
   margin: 0 0 10px;
   font-family: "Ubuntu Sans Mono", monospace;
   font-weight: 700;
 }
-
 .college-box p {
   margin: 0 0 10px;
   font-weight: 300;
   font-family: "Ubuntu Sans Mono", monospace;
 }
-
-
 button {
   background: #fbca1f;
   font-family: inherit;
@@ -311,7 +291,6 @@ button {
   box-shadow: 0.1em 0.1em;
   cursor: pointer;
 }
-
 .school-box{
   padding: 20px;
   gap: 10px;
@@ -331,45 +310,74 @@ button {
   font-family: "Ubuntu Sans Mono", monospace;
   font-weight: 700;
 }
-
 .school-box p {
   margin: 0 0 10px;
   font-weight: 300;
   font-family: "Ubuntu Sans Mono", monospace;
 }
-
 /* --------------------------------------------------------------------------------------------------------- */
 #contact{
-  height: 90vh;
+  height:100vh;
   width: 100%;
   align-items: center;
+  justify-content: center;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  background-color: #000;
+  /* background-color: #000; */
 }
-
-
+.contact-box{
+  height: 92vh;
+  width: 80%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background-color: wheat; */
+  display: flex;
+  gap: 50px;
+}
 .contact-heading{
-  font-size: 45px;
+  font-size: 35px;
+  width: 80%;
   font-family: "Ubuntu Sans Mono", monospace;
-  display: flex;
-  justify-content: center;
-  /* margin-top: 15px; */
+  margin-top: 15px;
+  justify-content: end;
+  align-items: end;
 }
-
-/* --------------------------------------------------------------------------- */
-
-.bottom-line{
-  height: 8vh;
-  width: 100%;
+.contact-box1{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  width: 50%;
+}
+.row-row{
+  display: flex;
   align-items: center;
+  gap: 20px;
+}
+.contact-box2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #eee; */
+}
+
+.email-div h2{
+  font-size: 15px;
+  font-family:   "Ubuntu Sans Mono", monospace;
+  font-weight: 100;
+}
+/* --------------------------------------------------------------------------- */
+.footer{
+  background-color: #383232;
+  /* height: 8vh; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
 
 }
-.bottom-line h3{
-  font-family: "Ubuntu Sans Mono", monospace;
-  font-weight: 100;
-  font-size: 15px;
- 
-}
+
+
+/* ----------------------------------------------------------------------------- */

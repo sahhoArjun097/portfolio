@@ -3,133 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Timeline</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #121212; /* Dark background */
-            color: #E0E0E0; /* Light grey text */
-            font-family: 'Roboto', sans-serif; /* Techy font */
-            margin: 0;
-            padding: 20px;
-        }
-
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background: #333;
-        }
-
-        .timeline-item1{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            
-            background: #1E1E1E; /* Slightly lighter dark grey for card */
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            width: 40%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow */
-            position: relative;
-        }
-
-        .timeline-item1::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            left: -10px;
-            width: 20px;
-            height: 20px;
-            background: #E0E0E0;
-            border: 4px solid #121212;
-            border-radius: 50%;
-        }
-
-        .timeline-item1:nth-child(odd)::before {
-            left: calc(100% + 10px);
-        }
-
-        .timeline-item1:nth-child(odd) {
-            align-items: flex-end;
-        }
-
-        .timeline-item1 img {
-            width: 50px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .timeline-item1 h3 {
-            margin: 0 0 10px;
-            font-weight: 700;
-        }
-
-        .timeline-item1 p {
-            margin: 0 0 10px;
-            font-weight: 300;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            background: #00FFAB; /* Neon green accent */
-            color: #121212;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin: 5px;
-            font-weight: 400;
-            transition: background 0.3s ease;
-        }
-
-        .tag:hover {
-            background: #00D4AB; /* Slightly darker neon green on hover */
-        }
-    </style>
+    <title>Document</title>
+    <link  rel="stylesheet" href="../src/global.css">
+    <link rel="stylesheet" href="../src/index/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="timeline">
-        <div class="timeline-item1">
+    <section id="mywork">
+        <div class="skill-heading">
+          <h1>MY WORK</h1>
+        </div>
+        <div class="work-box">  
+          <!-- part-1--------------------------------------------------------------------------------------------- -->
+          <div class="Xcard">
+            <img src="../assets/personalprotfolio.png" alt=""> 
+            <div class="card__content">
+              <p class="card__title">"Personal Portfolio Website"</p>
+              <p class="card__description">
+                This personal portfolio website showcases my creative work and achievements. It features a collection of visual art and web design projects, offering visitors a chance to explore my skills and experience in a simple and engaging way.</p>
+              <button id="comic-button"> <a href="index.html">Click me!</a></button>
+            </div>
+          </div>
+          <!-- part-2------------------------------------------------------------------------------------------------ -->
+          <div class="Xcard">
+            <img src="../assets/Screenshot 2024-06-30 195556.png" alt=""> 
+            <div class="card__content">
+              <p class="card__title"> "Layers" </p>
+              <p class="card__description">
+                This project is a "Layers" clone built with HTML and Tailwind CSS. It demonstrates a layered design structure with a modern, responsive layout. The design includes a header, content sections, and a footer, all styled using Tailwind's utility classes for a clean and efficient development process.</p>
+              <button id="comic-button"> <a href="https://regal-toffee-ba604c.netlify.app/">Click me!</a></button>
+            </div> 
+          </div>
+          <!-- part-3---------------------------------------------------------------------------------------------------- -->
+          <div class="Xcard">
+            <div class="black">
+            <div class="scene">
+              <div class="forest">
+                <div class="tree tree1">
+                  <div class="branch branch-top"></div>
+                  <div class="branch branch-middle"></div>
+                </div>
             
-            <h3>Bachelor degree of Technology in Computer Science and Engineering</h3>
-            <p>Moradabad Institute of Technology and Management, AKTU<br>MORADABAD, India - 4 years</p>
-            <div class="tags">
-                <span class="tag">C</span>
-                <span class="tag">Algorithm</span>
-                <span class="tag">Data Structures</span>
-                <span class="tag">Python</span>
-                <span class="tag">Database management</span>
-                <span class="tag">Operating System</span>
+                <div class="tree tree2">
+                  <div class="branch branch-top"></div>
+                  <div class="branch branch-middle"></div>
+                  <div class="branch branch-bottom"></div>
+                </div>
+            
+                <div class="tree tree3">
+                  <div class="branch branch-top"></div>
+                  <div class="branch branch-middle"></div>
+                  <div class="branch branch-bottom"></div>
+                </div>
+            
+                <div class="tree tree4">
+                  <div class="branch branch-top"></div>
+                  <div class="branch branch-middle"></div>
+                  <div class="branch branch-bottom"></div>
+                </div>
+            
+                <div class="tree tree5">
+                  <div class="branch branch-top"></div>
+                  <div class="branch branch-middle"></div>
+                  <div class="branch branch-bottom"></div>
+                </div>
+            
+                <div class="tree tree6">
+                  <div class="branch branch-top"></div>
+                  <div class="branch branch-middle"></div>
+                  <div class="branch branch-bottom"></div>
+                </div>
+            
+                <div class="tree tree7">
+                  <div class="branch branch-top"></div>
+                  <div class="branch branch-middle"></div>
+                  <div class="branch branch-bottom"></div>
+                </div>
+              </div>
+              
+              <div class="tent">
+                  <div class="roof"></div>
+                  <div class="roof-border-left">
+                    <div class="roof-border roof-border1"></div>
+                    <div class="roof-border roof-border2"></div>
+                    <div class="roof-border roof-border3"></div>
+                  </div>
+                  <div class="entrance">
+                    <div class="door left-door">
+                      <div class="left-door-inner"></div>
+                    </div>
+                    <div class="door right-door">
+                      <div class="right-door-inner"></div>
+                    </div>
+                  </div>
+                </div>
+            
+              <div class="floor">
+                  <div class="ground ground1"></div>
+                  <div class="ground ground2"></div>
+                </div>
+              
+              <div class="fireplace">
+                <div class="support"></div>
+                <div class="support"></div>
+                <div class="bar"></div>
+                <div class="hanger"></div>
+                <div class="smoke"></div>
+                <div class="pan"></div>
+                <div class="fire">
+                  <div class="line line1">
+                    <div class="particle particle1"></div>
+                    <div class="particle particle2"></div>
+                    <div class="particle particle3"></div>
+                    <div class="particle particle4"></div>
+                  </div>
+                  <div class="line line2">
+                    <div class="particle particle1"></div>
+                    <div class="particle particle2"></div>
+                    <div class="particle particle3"></div>
+                    <div class="particle particle4"></div>
+                  </div>
+                  <div class="line line3">
+                    <div class="particle particle1"></div>
+                    <div class="particle particle2"></div>
+                    <div class="particle particle3"></div>
+                    <div class="particle particle4"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="time-wrapper">
+                <div class="time">
+                  <div class="day"></div>
+                  <div class="night">
+                    <div class="moon"></div>
+                    <div class="star star1 star-big"></div>
+                    <div class="star star2 star-big"></div>
+                    <div class="star star3 star-big"></div>
+                    <div class="star star4"></div>
+                    <div class="star star5"></div>
+                    <div class="star star6"></div>
+                    <div class="star star7"></div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
-        </div>
-        <div class="timeline-item">
-            <img src="../" alt="">
-            <h3>Intermediate</h3>
-            <p>ST Mary's conventSchool, CBSE<br>DHAMPUR, India</p>
-            <div class="tags">
-                <span class="tag">Physics</span>
-                <span class="tag">Chemistry</span>
-                <span class="tag">Maths</span>
-                <span class="tag">Computer Science</span>
             </div>
+            <div class="card__content">
+              <p class="card__title">"WeatherApp"</p>
+              <p class="card__description">
+                Our Weather App provides accurate and up-to-date weather information for any location worldwide. Built with HTML, CSS and Javascript. Simply enter a city name, and you'll get the current temperature, weather conditions, and other relevant data such as humidity and wind speed.</p>
+              <button id="comic-button"> <a href="https://sahhoarjun097.github.io/weatherapp/">Click me!</a></button>
+            </div> 
+          </div>
         </div>
-    </div>
+        
+      </section>
 </body>
 </html>
