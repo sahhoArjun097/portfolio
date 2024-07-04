@@ -377,6 +377,49 @@ button {
 
 }
 
+/* ------------------------------------------------------------------------------- */
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 50px;
+}
+.banner .slider{
+  position: absolute;
+  width:150px;
+  height: 150px;
+  top: 25%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun{
+  from{
+      transform: perspective(2000px) rotateX(-16deg) rotateY(0deg);
+  }to{
+      transform: perspective(2000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+      rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(550px);
+}
+.banner .slider .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 /* ----------------------------------------------------------------------------- */
 /* 
@@ -386,44 +429,102 @@ Laptops and small screen – 769px — 1024px.
 Large screens and Desktops – 1025px — 1200px.
 TV and Extra Large Screens – 1201px and more. */
 @media screen and (min-width:320px) and (max-width:480px){
-    .home{
-    min-width: 100%;
-    min-height: 100%;
-    }
-  .bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    height: 20vh;
-    padding: 45px 45px;
+
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container-holder {
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 25px;
+}    
+   
+.container-holder{
+  height: 80vh;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.inner-box{
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+#left-box{
+  /* display: none; */
+  height: 60%;
+  width: 80%;
+}
+.name>p{
+  font-size: 30px;
+}
+#left-box p{
+  font-size: 25px;
+}
+
+.card {
+  width: 60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+#rigth-box{
+  /* display: none; */
+  height: 40%;
+  width: 100%;
+  padding: 20px;
+  background-color:transparent;
+}
+#rigth-box>img {
+  justify-content: center;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-color: #eeeeee;
   width: 100%;
 }
   .A{
     color: rgb(177, 18, 18);
-    font-size: 15px;
+    font-size: 45px;
   }
   .mid-nav{
     display: none;
   }
-  .inner-box{
-    display: flex;
-    flex-direction: column-reverse;
-    display: none;
+ 
 
-  }
-
-  #rigth-box{ 
-    justify-content: center;
-    height: 600px;
-    border-radius: 50%;
-    object-fit: cover;
-    background-position: center; 
-    display: flex;
-    align-items: center;
-    background-size: cover; 
-    background-color: #eeeeee;
-    width: 300px;
-  } 
+  .banner .slider{
+    width: 250px;
+    height: 250px;
+    left: calc(50% - 50px);
 }
+.banner .slider {
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(180px);
+}
+}
+
+
+/* ------------------------------------------------------------------------------------- */
