@@ -7,8 +7,7 @@ html , body{
     height: 100%;
     width: 100%;
     color: beige; 
-     background: #080808;
-     
+     background: #080808; 
 }
 .home{
   height: 100vh;
@@ -40,7 +39,6 @@ html , body{
   justify-content: space-between;
   height: 8vh;
   padding: 0px 50px;
-
 }
 
 .A{
@@ -381,3 +379,51 @@ button {
 
 
 /* ----------------------------------------------------------------------------- */
+/* 
+For Mobile Devices – 320px — 480px.
+iPads and Tablets – 481px — 768px.
+Laptops and small screen – 769px — 1024px.
+Large screens and Desktops – 1025px — 1200px.
+TV and Extra Large Screens – 1201px and more. */
+@media screen and (min-width:320px) and (max-width:480px){
+    .home{
+    min-width: 100%;
+    min-height: 100%;
+    }
+  .bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    padding: 45px 45px;
+}
+.container-holder {
+  width: 100%;
+}
+  .A{
+    color: rgb(177, 18, 18);
+    font-size: 15px;
+  }
+  .mid-nav{
+    display: none;
+  }
+  .inner-box{
+    display: flex;
+    flex-direction: column-reverse;
+    display: none;
+
+  }
+
+  #rigth-box{ 
+    justify-content: center;
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    background-size: cover; 
+    background-color: #eeeeee;
+    width: 300px;
+  } 
+}
