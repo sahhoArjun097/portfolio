@@ -451,7 +451,31 @@ body, html {
   height: 15vh;
   padding: 25px;
 }    
-
+.menu-sheet{
+height: 100%;
+width: 50%;
+background-color: #25262762;
+backdrop-filter: blur(30px);
+overflow: hidden;
+top: 0;
+right: 0;
+padding: 100px 30px;
+position: absolute;
+gap: 40px;
+z-index: 10;
+}
+.sheet-content{
+  /* height: 50%; */
+  /* width: 80%;   */
+  display:inline;
+}
+.menu-sheet h4{
+ font-size: 25px;
+ font-weight: 600;
+ font-family:monospace;
+ margin-bottom: 10px;
+  color: #000;
+}
 .container-holder{
   height: 80vh;
   width: 100%;
