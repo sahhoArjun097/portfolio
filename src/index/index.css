@@ -564,15 +564,23 @@ body, html {
 }
 .contact-box{
   height: 92vh;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+.contact-heading {
+  font-size: 35px;
+  width: 90%;
+  font-family: "Ubuntu Sans Mono", monospace;
+  margin-top: 15px;
+  justify-content: end;
+  align-items: end;
 }
 .contact-box1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 45%;
+  height: 50%;
   padding: 20px;
   width: 100%;
 }
