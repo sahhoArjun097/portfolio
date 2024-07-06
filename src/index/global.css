@@ -1783,8 +1783,8 @@ button-2::before {
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    height:400px;
-    /* width: 100%; */
+    height:300px;
+    width: 100%;
     border-radius: 5px;
     border: 2px solid var(--main-color);
     box-shadow: 4px 4px var(--main-color);
