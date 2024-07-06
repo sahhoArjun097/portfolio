@@ -584,6 +584,14 @@ body, html {
   padding: 20px;
   width: 100%;
 }
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 80px;
+  width: 100%;
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
 
 }
 
