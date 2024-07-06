@@ -428,6 +428,9 @@ TV and Extra Large Screens – 1201px and more. */
 @media screen and (min-width:320px) and (max-width:580px){
 
 
+  #curser{
+  display: none;
+  }
 body, html {
   width: 100%;
   overflow-x: hidden;
