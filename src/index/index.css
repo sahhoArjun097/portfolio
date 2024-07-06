@@ -72,6 +72,12 @@ html , body{
     font-family: "Ubuntu Sans Mono", monospace;
     font-size: 40px;
   }
+  #present-midnav{
+    justify-content: center;
+    display: flex;
+    /* align-items: center; */
+    padding-top: 10px;
+  }
   .mid-nav{
     display: flex;
     gap: 50px
@@ -445,7 +451,7 @@ body, html {
   height: 15vh;
   padding: 25px;
 }    
-   
+
 .container-holder{
   height: 80vh;
   width: 100%;

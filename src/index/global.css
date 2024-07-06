@@ -1741,7 +1741,7 @@ button-2::before {
     height: 87px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
   }
@@ -1758,6 +1758,48 @@ button-2::before {
   .socialSvg {
     width: 20px;
   }
+  /* -------------------------------------------------------------------------------------- */
+  
+
+#menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 13%;
+  color: #090909;
+  width: 3em;
+  height: 3em;
+  border-radius: 0.5em;
+  background: #171717;
+  border: 1px solid #171717;
+ 
+  box-shadow: inset 4px 4px 12px #3a3a3a,
+             inset -4px -4px 12px #000000;
+}
+
+#menuButton:hover {
+  border: 1px solid black;
+}
+
+
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+#menuButton span {
+  width: 30px;
+  height: 4px;
+  background: rgb(200,200,200);
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+
+/* --------------------------------------------------------------------------- */
   
   .loader {
     width: 40px;
@@ -1769,6 +1811,32 @@ button-2::before {
     box-sizing: border-box;
     animation: rotationBack 1s ease-in-out infinite reverse;
     margin-top: 5px;
+  }
+  .input {
+    width: 350px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+}
+  .message-input {
+    width: 350px;
+    height: 50px; /* Increase the height as needed */
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 10px 10px; /* Adjust padding as needed */
+    outline: none;
   }
   .form {
     --input-focus: #2d8cf0;
