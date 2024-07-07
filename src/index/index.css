@@ -17,7 +17,9 @@ html , body{
   height: 100%;
   position: relative;
 }
-
+.menu-sheet{
+  display: none;
+}
 #curser{
   height: 40px;
   width: 40px;
