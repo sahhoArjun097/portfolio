@@ -40,6 +40,32 @@ tl.from(".description .nav-contact",{
   opacity:0,
   duration:1
 })
+var cross =document.querySelector(".sheet-content i")
+var menu = document.querySelector("#present-midnav #menuButton")
+
+var til = gsap.timeline()
+til.to(".menu-sheet",{
+  right:0,
+  duration:1
+})
+til.from(".sheet-content h4",{
+  x:100,
+  duration:1,
+  stagger:0.3,
+  opacity:0,
+})
+til.from(".sheet-content i",{
+  opacity:0
+})
+
+til.pause()
 
 
 
+menu.addEventListener("click",function(){
+  til.play()
+})
+
+cross.addEventListener("click",function(){
+  til.reverse()
+})
