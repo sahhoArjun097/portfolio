@@ -17,9 +17,7 @@ html , body{
   height: 100%;
   position: relative;
 }
-.menu-sheet{
-  display: none;
-}
+
 #curser{
   height: 40px;
   width: 40px;
@@ -47,7 +45,9 @@ html , body{
   color: rgb(177, 18, 18);
   font-size: 45px;
 }
-
+.sheet-content{
+  display: none;
+}
 .l-nav{
     height: 50px;
     width: 100px;
@@ -782,7 +782,7 @@ z-index: 10;
 
 }
 @media screen and (min-width:800px) and (max-width:1080px){
-
+ 
   .work-box{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
