@@ -46,11 +46,11 @@ var menu = document.querySelector("#present-midnav #menuButton")
 var til = gsap.timeline()
 til.to(".menu-sheet", {
   right: 0,
-  duration: 1
+  duration: 0.4
 })
 til.from(".sheet-content h4", {
   x: 100,
-  duration: 1,
+  duration: 0.5,
   stagger: 0.3,
   opacity: 0,
 })
