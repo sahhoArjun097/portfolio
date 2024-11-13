@@ -16,9 +16,13 @@ Welcome to my portfolio! This project showcases my skills as a frontend develope
 - **JavaScript:** Added interactivity and enhanced functionality.
 - **GSAP:** Used for animations, adding smooth transitions and interactive effects.
 
+## Live Demo
+
+Check out the live version of my portfolio here: [arjunagarwal.vercel.app](https://arjunagarwal.vercel.app/)
+
 ## Installation
 
-To view or edit this portfolio:
+To view or edit this portfolio locally:
 
 1. **Clone the repository:**
    ```bash
