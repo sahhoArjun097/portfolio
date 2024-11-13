@@ -27,3 +27,24 @@ To view or edit this portfolio locally:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/sahhoArjun097/portfolio.git
+   Open the project: Navigate to the project folder and open the index.html file in a web browser to view the portfolio.
+   
+Project Structure
+index.html: Main structure of the portfolio.
+style.css: Contains all custom styles.
+script.js: JavaScript for interactions and GSAP animations.
+assets/: Contains images, icons, and other assets used in the portfolio.
+Usage
+This portfolio is designed to showcase projects, skills, and experience. Feel free to explore each section and click on links or buttons to see detailed information on my work.
+
+Screenshots
+
+License
+This project is open-source, and you're welcome to use it as a reference or starting point for your own portfolio.
+
+Contact
+For any inquiries or collaboration opportunities, please feel free to connect with me on:
+
+LinkedIn: Arjun Agarwal
+GitHub: sahhoArjun097
+Twitter: @SAAHO94539047
